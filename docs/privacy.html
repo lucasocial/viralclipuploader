@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Privacy Policy - Viral Clip Uploader</title></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Viral Clip Uploader</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
+    h1 { font-size: 2em; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    h2 { margin-top: 2em; color: #333; }
+    p, li { font-size: 0.97em; }
+    a { color: #0066cc; }
+  </style>
+</head>
 <body>
 <h1>Privacy Policy</h1>
-<p>Last updated: April 6, 2026</p>
-<p>Viral Clip Uploader does not collect, store, or share any personal data.</p>
+<p><strong>Last updated: April 8, 2026</strong></p>
+<p>This Privacy Policy describes how Viral Clip Uploader ("we", "us", or "our") handles information when you use the Viral Clip Uploader desktop application ("the App" or "the Service"). We are committed to protecting your privacy and being transparent about our data practices.</p>
+
+<h2>1. Information We Collect</h2>
+<p>The App is designed to operate with minimal data collection. The following describes what information is processed:</p>
+
+<h3>1.1 Information You Provide</h3>
 <ul>
-<li>No user data is collected or transmitted to third parties.</li>
-<li>API tokens are stored locally on your device only.</li>
-<li>Videos are processed locally and uploaded directly to your social media accounts.</li>
+  <li><strong>API credentials:</strong> API keys for services such as Anthropic Claude are entered by the user and stored locally on your device in a configuration file. These are never transmitted to our servers.</li>
+  <li><strong>Video content:</strong> Videos you choose to process are handled entirely on your local device. We do not receive, store, or have access to your video content.</li>
 </ul>
-<p>Contact: lucasocial@github.com</p>
+
+<h3>1.2 Authentication Tokens</h3>
+<ul>
+  <li>When you authenticate with third-party platforms (TikTok, YouTube), OAuth 2.0 access tokens are obtained through the official authorisation flows of those platforms.</li>
+  <li>These tokens are stored locally on your device only (in your user home directory) and are used solely to perform actions you explicitly request, such as uploading a video.</li>
+  <li>We do not have access to these tokens and they are never transmitted to our servers.</li>
+</ul>
+
+<h3>1.3 Information We Do Not Collect</h3>
+<p>We do not collect, store, or transmit:</p>
+<ul>
+  <li>Your name, email address, or any personal identifiers</li>
+  <li>Your IP address or device identifiers</li>
+  <li>Usage analytics or telemetry data</li>
+  <li>Video content or metadata of videos you process</li>
+  <li>Any data to third-party analytics or advertising services</li>
+</ul>
+
+<h2>2. How We Use Information</h2>
+<p>Since the App operates locally on your device, no information is transmitted to or processed by our servers. All processing — including video analysis, transcription, and AI-powered clip selection — occurs entirely on your local machine.</p>
+<p>Credentials and tokens stored locally are used exclusively to:</p>
+<ul>
+  <li>Authenticate with third-party APIs (TikTok, YouTube, Anthropic) on your behalf</li>
+  <li>Perform publishing actions that you explicitly initiate within the App</li>
+</ul>
+
+<h2>3. Third-Party Services</h2>
+<p>The App interacts with the following third-party services on your behalf when you use the relevant features:</p>
+<ul>
+  <li><strong>TikTok:</strong> When you upload content to TikTok, your video and post information is transmitted directly from your device to TikTok's servers via the TikTok Content Posting API. TikTok's privacy policy applies: <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank">https://www.tiktok.com/legal/privacy-policy</a></li>
+  <li><strong>YouTube (Google):</strong> When you upload content to YouTube, your video and post information is transmitted directly from your device to Google's servers via the YouTube Data API. Google's privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+  <li><strong>Anthropic Claude API:</strong> When analysing video transcripts, text content (not video) is sent to Anthropic's API. Anthropic's privacy policy applies: <a href="https://www.anthropic.com/privacy" target="_blank">https://www.anthropic.com/privacy</a></li>
+  <li><strong>OpenAI Whisper:</strong> Audio transcription is performed locally on your device using the Whisper model. No audio data is transmitted to external servers.</li>
+</ul>
+
+<h2>4. Data Storage and Security</h2>
+<p>All data related to the App (configuration, tokens) is stored locally on your device in your user home directory. We do not operate any servers that store your data. You are responsible for the security of your own device and the protection of locally stored credentials.</p>
+<p>We recommend:</p>
+<ul>
+  <li>Keeping your operating system and the App up to date</li>
+  <li>Not sharing your device with untrusted parties</li>
+  <li>Revoking API tokens through the respective platforms if you believe they have been compromised</li>
+</ul>
+
+<h2>5. Data Retention</h2>
+<p>Since we do not collect or store any data on our servers, there is no data retention on our end. Locally stored configuration files and tokens remain on your device until you delete them or uninstall the App. You can delete the local configuration file at any time by removing <code>~/.viral_clip_config.json</code> from your home directory.</p>
+
+<h2>6. Your Rights</h2>
+<p>Depending on your jurisdiction, you may have rights regarding your personal data, including the right to access, correct, or delete it. Since we do not collect personal data, these rights primarily apply to data held by the third-party platforms you connect to (TikTok, YouTube, etc.). Please consult those platforms' privacy policies and privacy controls to exercise your rights with respect to data they hold.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The Service is not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the Service, please contact us so we can take appropriate action.</p>
+
+<h2>8. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify users of significant changes by updating the "Last updated" date at the top of this page. Your continued use of the Service after changes are posted constitutes your acceptance of the updated policy.</p>
+
+<h2>9. Contact</h2>
+<p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at: <a href="mailto:lucasocial@github.com">lucasocial@github.com</a></p>
 </body>
 </html>
